@@ -5,19 +5,27 @@
      player = new Player();
      player.bindKeys();
     var movements = [];
-
+    var $field = $('#field');
+    
     function updateField() {
-        $.each(players, function(player) {
-            var now = new Date().getTime();
-            var timediff = player.updated - now;
-            // ???
-        });
-        while (movements) {
-            var movement = movements.pop();
-            // ???
+        $player = $('#one');
+        
+        if($player.position().left <= 0 || $player.position().top <= 0 || 
+            $player.position().left >= $field.width() - $player.width() ||
+            $player.position().top >= $field.height() - $player.height()
+    ) {
+            
+            player.speed.x = 0;
+            player.speed.y = 0; 
         }
+        
+        player.updatePosition();
+        $player.css({
+            left: player.position.x,
+            top: player.position.y
+        });
     }
 
-    setInterval(updateField, 10);
+    setInterval(updateField, 0);
 
 });

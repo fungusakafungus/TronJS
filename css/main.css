@@ -6,7 +6,7 @@ html, body {
 
 #field {
     width: 600px;
-    height: 600px;
+    height: 300px;
     margin: 50px auto;
     border: 1px solid #000;
     position: relative;
@@ -17,12 +17,13 @@ html, body {
     height: 10px;
     background-color: #000;
     position: absolute;
-    left: 300px;
-    margin-left: -5px;
+    left: 10px;
+    
+    
 }
 
 #one {
-    top: 20px;
+    top: 10px;
     
 }
 
