@@ -4,4 +4,20 @@
  $(document).ready(function() {
      player = new Player();
      player.bindKeys();
- });
+    var movements = [];
+
+    function updateField() {
+        $.each(players, function(player) {
+            var now = new Date().getTime();
+            var timediff = player.updated - now;
+            // ???
+        });
+        while (movements) {
+            var movement = movements.pop();
+            // ???
+        }
+    }
+
+    setInterval(updateField, 10);
+
+});
