@@ -2,5 +2,6 @@
 // on keyboard and websocket: store movements in an array
 // on timer event: process movements and update canvas
  $(document).ready(function() {
-   
+     player = new Player();
+     player.bindKeys();
  });
