@@ -9,5 +9,20 @@ html, body {
     height: 600px;
     margin: 50px auto;
     border: 1px solid #000;
+    position: relative;
+}
+
+.player {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    left: 300px;
+    margin-left: -5px;
+}
+
+#one {
+    top: 20px;
+    
 }
 
